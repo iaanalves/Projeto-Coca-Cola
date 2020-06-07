@@ -27,10 +27,11 @@ section #img img {
 }
 
 section #main-navigation{    
-    display: flex;
+    display: inline-flex;    
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-left: 300px;  
     height: 100%;     
 }
 
@@ -52,16 +53,37 @@ section #main-navigation ul li a {
     padding: 10px 15px;    
 }
 
-.button{
+/* button style */
+
+.button-um {
+    display: inline-flex;
+    align-items: center;   
+    justify-content: center;
+    margin: 7px;
+    background-color:white;
+    color: black;
+    border: 1px solid #BDBDBD;
+    border-radius: 6px;    
+    width: 150px;
+    height: 51px;
     text-decoration: none;
-    text-align: center;
-
-    border-radius: 6px 6px 6px 6px;
-
+    font-size: 22px ;        
+}
+.button-dois {
+    display: inline-flex;
+    align-items: center;   
+    justify-content: center;
+    margin: 7px;
     background-color: #f2413b;
     color: white;
+    border-radius: 6px;    
+    width: 150px;
+    height: 51px;
+    text-decoration: none;
+    font-size: 22px ;        
+}
 
-    width: 51px;
-    height: 33px;
-    
+section #button-location {    
+    position: absolute;    
+    right: 30px;    
 }
