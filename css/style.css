@@ -1,5 +1,5 @@
-@import url(//fonts.googleapis.com/css2?family=Roboto);
-@import url(//fonts.googleapis.com/css2?family=Montserrat);
+@import url(https://fonts.googleapis.com/css2?family=Roboto); /* faltou o https: no começo pra funcionar */
+@import url(https://fonts.googleapis.com/css2?family=Montserrat); /* faltou o https: no começo pra funcionar */
 
 body {
     margin: 0;
@@ -15,7 +15,7 @@ body {
     width: 100%;
     height: 115px; 
     box-shadow: 0px 1px 4px #00000029;    
-    opacity: 1;           
+    opacity: 1; /* hmmm... ta copiando o codigo do Adobe XD, PEGUEI NO FLAGRA */          
 }
 
 #img {    
