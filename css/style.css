@@ -109,76 +109,96 @@ section #button-location {
 }
 
 /* Main Content */
+.container {
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-sizing: border-box;
+}
 
-.horizontal_dotted_line {
-    margin-left: 23.5%;
-    margin-bottom: 2%;
-    width: 57%;
+.horizontal-dotted-line {
+    /* margin-left: 23.5%; >>> Isso é gambiarra */
+    margin-bottom: 1%; /* troquei de 2% pra 1% pois estava muito distante */
     border: dashed 2px #F44336;
     opacity: 1;
 } 
 
 .hero {
-padding-top: 37px;
-
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding-top: 37px;
 }
 
 .hero-title-header {
-    margin: 0;
     font-size: 30px ;
     height: 92px;
     width: 100%;
     background-color: #F44336;    
-    display: inline-flex;    
+    display: inline-flex; /* Troquei inline-flex por flex que ja serve */    
     flex-direction: row;
     align-items: center;
-    justify-content: right;
+    /* justify-content: start; >>> desnecessario neste caso */
     font-family:'Montserrat';
     font-weight: 600;
     letter-spacing: 0.7px;
-    }
+}
 
 .hero-title-header h1 {
     color: white;
     display: flex;
-    justify-content: center;
-    padding-left: 23.2%;
+    /* justify-content: start; >>> desnecessario neste caso */
 } 
 
 .hero-content { 
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between; /* troquei o valor ROW por SPACE-BETWEEN, pois ele deixa os elementos dentro desta tag, com width em tamanhos iguais */
+    /* justify-content: center; >>> agora que está sendo usado um container, fica a cargo dele decidir como os itens ficarão alinhados */
     font-family: 'Tahoma';
     font-size: 20px;
-    padding-left: 123px;
+    /* padding-left: 123px; >>> Isso é gambiarra */
 }
 
+/* essa regra pode ser removida, a de cima já é reutilizável */
 .hero-content-dois { 
     display: flex;
     flex-direction: row;
     justify-content: center;
     font-family: 'Tahoma';
     font-size: 20px;
-    padding-left: 76px;
-    }
+    /* padding-left: 76px; >>> Isso é gambiarra */
+}
 
-.hero-subtitle {    
+.hero-subtitle {   
+    width: 100%;
     margin: 0;
-    padding-left: 23.4%;
+    /* padding-left: 23.4%; >>> Isso é gambiarra */
     text-align: left;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    /* padding-left: 23.4%; >>> Isso é gambiarra */
+    margin-top: 4%; /* 
+    troquei de 21px para 4%, pra manter da mesma forma que a linha tracejada mantem a distancia do bottom dela 
+    E também troquei de padding pra margin, pois faz mais sentido a section toda se distanciar o header vermelho
+    do que internamente ele se distanciar do header e continuar colado, sem margin
+    */
+    padding-bottom: 1%; /* troquei de 21px para 1%, pra manter da mesma forma que a linha tracejada mantem a distancia do bottom dela */
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 24px;
 }
 
+/* essa regra pode ser removida, a de cima já é reutilizável */
 .hero-subtitle-dois {    
+    width: 100%;
     margin: 0;
-    padding-left: 23.4%;
     text-align: left;
-    padding-top: 21px;
+    margin-top: 4%; /* 
+    troquei de 21px para 4%, pra manter da mesma forma que a linha tracejada mantem a distancia do bottom dela 
+    E também troquei de padding pra margin, pois faz mais sentido a section toda se distanciar o header vermelho
+    do que internamente ele se distanciar do header e continuar colado, sem margin
+    */
     padding-bottom: 21px;
     font-family: 'Montserrat';
     font-weight: 500;
@@ -186,33 +206,40 @@ padding-top: 37px;
 }
 
 .hero-content p {
-    line-height: 1.1;
-    width: 510px;
-    height: 310px;
-    padding: 2%;
+    line-height: 1.3; /* troquei 1.1 por 1.3, pra dar um espaçamento maior */
+    width: 48%; /* é perigoso usar valore fixos para tamanho de um conteudo, somente em caso específico */
+    /* além disso, eu coloquei o width com 48%, pois a section que envolve ele JUNTO da imagem,
+    somam um total de 50%, pois estão com space-betwen, ai é só usar 48% pra dar uma falsa margem
+    a esquerda do texto
+    */
+    height: auto; /* é perigoso usar valore fixos para tamanho de um conteudo, somente em caso específico */
+    padding-right: 2%; /* aqui troquei 5% por 2%, igual no de cima, pra manter o padrão*/
     padding-top: 0px;
     padding-bottom: 2px;
     font-size: 20px;
     color: #424242;
 }
 
+/* essa regra pode ser removida, a de cima já é reutilizável */
 .hero-content-dois p {
-    line-height: 1.3;
-    width: 510px;
-    height: 310px;
-    padding-right: 5%;
-    padding-top: 0px;
+    line-height: 1.3; /* troquei 1.1 por 1.3, pra dar um espaçamento maior */
+    width: 100%; /* é perigoso usar valore fixos para tamanho de um conteudo, somente em caso específico */
+    height: auto; /* é perigoso usar valore fixos para tamanho de um conteudo, somente em caso específico */
+    padding-right: 2%; /* aqui troquei 5% por 2%, igual no de cima, pra manter o padrão*/
+    /* padding-top: 0px; >>> não tem efeito nenhum */
     padding-bottom: 2px;
     font-size: 20px;
     color: #424242;
 }
 
 .hero-img {
-    width: auto;
+    width: auto; /* troquei AUTO por 100%, pra que ele fique com o mesmo tamanho do texto, que tambem tem 100% de width */
     height: auto;
+    align-self: flex-start;
 }
 
 .hero-img-dois {
     width: auto;
     height: auto;
 }
+
