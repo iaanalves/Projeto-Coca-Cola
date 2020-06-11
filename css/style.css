@@ -1,5 +1,5 @@
-@import url(//fonts.googleapis.com/css2?family=Roboto);
-@import url(//fonts.googleapis.com/css2?family=Montserrat);
+@import url(https://fonts.googleapis.com/css2?family=Roboto);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat);
 
 body {
     margin: 0;
@@ -10,8 +10,7 @@ body {
 /* main style */
 
 .header {
-    background: transparent linear-gradient(180deg, #FFFFFF 0%, #EEEEEE 51%, #FFFFFF 100%) 0% 0% 
-    no-repeat padding-box;
+    background: linear-gradient(180deg,  white, #EEEEEE 50%,  white 100%);    
     width: 100%;
     height: 115px; 
     box-shadow: 0px 1px 4px #00000029;    
@@ -110,29 +109,35 @@ section #button-location {
 
 /* Main Content */
 
-.horizontal_dotted_line {
-    margin-left: 23.5%;
-    margin-bottom: 2%;
-    width: 57%;
+.container {
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-sizing: border-box;
+}
+
+.horizontal-dotted-line {    
+    margin-bottom: 1%;    
     border: dashed 2px #F44336;
     opacity: 1;
 } 
 
 .hero {
-padding-top: 37px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding-top: 37px;
 
 }
 
-.hero-title-header {
-    margin: 0;
+.hero-title-header {    
     font-size: 30px ;
     height: 92px;
-    width: 100%;
+    width: 100%;    
     background-color: #F44336;    
-    display: inline-flex;    
+    display: flex;    
     flex-direction: row;
-    align-items: center;
-    justify-content: right;
+    align-items: center;    
     font-family:'Montserrat';
     font-weight: 600;
     letter-spacing: 0.7px;
@@ -140,68 +145,36 @@ padding-top: 37px;
 
 .hero-title-header h1 {
     color: white;
-    display: flex;
-    justify-content: center;
-    padding-left: 23.2%;
+    display: flex;    
 } 
 
-.hero-content { 
+.hero-content {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     font-family: 'Tahoma';
-    font-size: 20px;
-    padding-left: 123px;
+    font-size: 20px;   
 }
 
-.hero-content-dois { 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: 'Tahoma';
-    font-size: 20px;
-    padding-left: 76px;
-    }
-
-.hero-subtitle {    
-    margin: 0;
-    padding-left: 23.4%;
+.hero-subtitle {
+    width: 100%;    
+    margin: 0;    
     text-align: left;
-    padding-top: 21px;
-    padding-bottom: 21px;
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 24px;
-}
-
-.hero-subtitle-dois {    
-    margin: 0;
-    padding-left: 23.4%;
-    text-align: left;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    margin-top: 4%;
+    padding-bottom: 1%;
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 24px;
 }
 
 .hero-content p {
-    line-height: 1.1;
-    width: 510px;
-    height: 310px;
-    padding: 2%;
-    padding-top: 0px;
-    padding-bottom: 2px;
-    font-size: 20px;
-    color: #424242;
-}
-
-.hero-content-dois p {
     line-height: 1.3;
-    width: 510px;
-    height: 310px;
-    padding-right: 5%;
-    padding-top: 0px;
+    width: 48%;
+    height:auto;
+    padding-right: 2%;
+    padding-top: 0px;    
     padding-bottom: 2px;
     font-size: 20px;
     color: #424242;
@@ -210,9 +183,6 @@ padding-top: 37px;
 .hero-img {
     width: auto;
     height: auto;
+    align-self: flex-start;
 }
 
-.hero-img-dois {
-    width: auto;
-    height: auto;
-}
