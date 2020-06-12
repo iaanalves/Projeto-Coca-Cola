@@ -109,6 +109,12 @@ section #button-location {
 }
 
 /* Main Content */
+.container {
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-sizing: border-box;
+}
 
 .horizontal_dotted_line {
     margin-left: 23.5%;
@@ -136,7 +142,7 @@ padding-top: 37px;
     font-family:'Montserrat';
     font-weight: 600;
     letter-spacing: 0.7px;
-    }
+}
 
 .hero-title-header h1 {
     color: white;
@@ -208,6 +214,7 @@ padding-top: 37px;
 }
 
 .hero-img {
-    width: auto;
+    width: auto; /* troquei AUTO por 100%, pra que ele fique com o mesmo tamanho do texto, que tambem tem 100% de width */
     height: auto;
+    align-self: flex-start;
 }
