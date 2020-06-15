@@ -56,7 +56,7 @@ section #main-navigation ul li a {
 
 /* hover style */
 
-li:hover{
+#main-navigation li:hover{
     color: white;
 }
 
@@ -116,7 +116,7 @@ section #button-location {
     box-sizing: border-box;
 }
 
-.horizontal_dotted_line {
+.horizontal-dotted-line {
     margin-bottom: 1%;
     border: dashed 2px #F44336;
     opacity: 1;
@@ -129,15 +129,14 @@ section #button-location {
     padding-top: 37px;
 }
 
-.hero-title-header {    
-    font-size: 30px ;
+.hero-title-header {     
+    font-size: 30px;
     height: 92px;
-    width: 100%;
-    background-color: #F44336;    
-    display: flex;    
+    background-color: #F44336;
+    display: flex;
     flex-direction: row;
-    align-items: center;    
-    font-family:'Montserrat';
+    align-items: center;
+    font-family: 'Montserrat';
     font-weight: 600;
     letter-spacing: 0.7px;
 }
@@ -152,7 +151,7 @@ section #button-location {
     height: auto;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-family: 'Tahoma';
     font-size: 20px;
 }
@@ -183,4 +182,37 @@ section #button-location {
     width: auto; 
     height: auto;
     align-self: flex-start;
+}
+
+/* mission section */ 
+.container-dois {
+    background-color: #F44336;    
+    margin-top: 2%;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    color: white;
+}
+
+.hero-content-dois {   
+    display: flex;
+    justify-content: space-evenly;         
+}
+
+.box {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 570px;
+    height: 350px;
+    border-radius: 7px;
+    background-color: white;    
+}
+
+.box-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1%;  
+    color: black; 
 }
