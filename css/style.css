@@ -189,6 +189,7 @@ section #button-location {
     background-color: #F44336;    
     margin-top: 2%;
     box-sizing: border-box;
+    padding-bottom: 40px;
     width: 100%;
     height: auto;
     color: white;
@@ -196,14 +197,14 @@ section #button-location {
 
 .hero-content-dois {   
     display: flex;
-    justify-content: space-evenly;         
+    justify-content: space-between;         
 }
 
 .box {    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 570px;
+    width: 48%;
     height: 350px;
     border-radius: 7px;
     background-color: white;    
