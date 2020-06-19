@@ -9,6 +9,12 @@ body {
 }
 /* main style */
 
+#historia {}
+#missao {}
+#produtos {}
+#clientes {}
+#contate-nos {}
+
 .header {
     background: transparent linear-gradient(180deg, #FFFFFF 0%, #EEEEEE 51%, #FFFFFF 100%) 0% 0% 
     no-repeat padding-box;
@@ -233,4 +239,33 @@ section #button-location {
 .grid-img-dois {
     width: 100%;
     height: auto;
+}
+
+/* Client Section */
+
+.grid-client {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    font-family: 'Tahoma';
+    gap: 5%;
+}
+
+.button-client {
+    display: inline-flex;
+    align-items: center;   
+    justify-content: center;
+    margin: 7px; 
+    background-color: #ffffff;
+    border: 1px solid #BDBDBD;
+    color: black;
+    border-radius: 6px;    
+    width: 350px;
+    height: 70px;
+    text-decoration: none;
+    font-size: 22px ;        
 }
