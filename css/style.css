@@ -233,4 +233,43 @@ section #button-location {
 .grid-img-dois {
     width: 100%;
     height: auto;
+<<<<<<< Updated upstream
+=======
+}
+
+/* Client Section */
+
+.grid-client {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    font-family: 'Tahoma';
+    gap: 5%;
+}
+
+.button-client {
+    display: inline-flex;
+    align-items: center;   
+    justify-content: center;
+    padding: 1%; 
+    background-color: #F44336;    
+    color: white;
+    border-radius: 6px;    
+    width: 492px;
+    height: 70px;
+    text-decoration: none;
+    font-size: 22px ;
+    font-family: 'Montserrat';
+    font-weight: 600;      
+}
+
+.button-client:hover {
+    background-color: #EF5350;
+    color: white;      
+    transition-duration: 0.6s;   
+>>>>>>> Stashed changes
 }
