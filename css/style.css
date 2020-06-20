@@ -248,20 +248,19 @@ section #button-location {
     font-family: 'Tahoma';   
 }
 
-figcaption:nth-child(1) {        
-    text-align: left !important;
-    line-height: 30px !important;
-          
+.grid-client figure:nth-child(1) {        
+    text-align: left;
+    line-height: 30px;
 }
 
-figcaption:nth-child(2) {
-    text-align: middle !important;
-    line-height: 30px !important;    
+.grid-client figure:nth-child(2) {
+    text-align: center;
+    line-height: 30px;    
 }
 
-figcaption:nth-child(3) {
-    text-align: right !important;
-    line-height: 30px !important;    
+.grid-client figure:nth-child(3) {
+    text-align: right;
+    line-height: 30px;    
 }
 
 .button-client {
