@@ -233,8 +233,6 @@ section #button-location {
 .grid-img-dois {
     width: 100%;
     height: auto;
-<<<<<<< Updated upstream
-=======
 }
 
 /* Client Section */
@@ -271,5 +269,4 @@ section #button-location {
     background-color: #EF5350;
     color: white;      
     transition-duration: 0.6s;   
->>>>>>> Stashed changes
 }
