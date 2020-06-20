@@ -244,30 +244,24 @@ section #button-location {
     padding-top: 2%;
     margin-left: 10%;
     margin-right: 10%;
-    padding-bottom: 5%;
-    text-align: center;
+    padding-bottom: 5%;    
     font-family: 'Tahoma';   
-} 
-
-.grid-box-left {
-    display: grid;
-    gap: 5%;
-    line-height: 30px;
-    text-align: left;  
 }
 
-.grid-box-middle {
-    display: grid;
-    gap: 5%;   
-    line-height: 30px;
-    text-align: middle;    
+figcaption:nth-child(1) {        
+    text-align: left !important;
+    line-height: 30px !important;
+          
 }
 
-.grid-box-right {
-    display: grid;
-    gap: 5%;    
-    line-height: 30px;
-    text-align: right;    
+figcaption:nth-child(2) {
+    text-align: middle !important;
+    line-height: 30px !important;    
+}
+
+figcaption:nth-child(3) {
+    text-align: right !important;
+    line-height: 30px !important;    
 }
 
 .button-client {
