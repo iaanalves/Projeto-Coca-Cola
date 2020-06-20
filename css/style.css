@@ -263,6 +263,11 @@ section #button-location {
     line-height: 30px;    
 }
 
+.grid-client figcaption {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
 .button-client {
     display: flex;
     align-items: center;   
